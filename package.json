@@ -183,6 +183,7 @@
       "prefer-destructuring": 1,
       "jsx-a11y/label-has-for": 1,
       "jsx-a11y/anchor-is-valid": 1,
+      "react/no-array-index-key": 1,
       "react/jsx-filename-extension": [
         1,
         {
@@ -344,5 +345,8 @@
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.1",
     "webpack-hot-middleware": "^2.21.0"
+  },
+  "resolutions": {
+   "webpack-sources": "1.0.1"
   }
 }

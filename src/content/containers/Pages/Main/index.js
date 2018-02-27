@@ -1,23 +1,12 @@
-
 import React from 'react';
+import RealIndex from './realIndex';
 
-import List from './List';
-import Viewer from './Viewer';
-
-class Page extends React.Component {
-  componentDidMount() {
-    console.log('Page component loaded');
-  }
-
+class Login extends React.PureComponent {
   render() {
-    console.log('Page render');
     return (
-      <div>
-        <Viewer />
-        <List />
-      </div>
+      <RealIndex />
     );
   }
 }
 
-export default Page;
+export default Login;

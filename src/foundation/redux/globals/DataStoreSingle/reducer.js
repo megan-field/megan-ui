@@ -9,20 +9,13 @@ export default (state = initialState, action) => {
     case 'GLOBAL_STORE_SINGLE_UPDATE': {
       const modifiedStatePart = {};
 
-      if (dNc(action.initialState)) {
-        modifiedStatePart[action.mainID] = _.assign(
-          {},
-          { ...action.initialState },
-          state[action.mainID],
-          action.data,
-        );
-      } else {
-        modifiedStatePart[action.mainID] = _.assign(
-          {},
-          state[action.mainID],
-          action.data,
-        );
-      }
+
+      modifiedStatePart[action.mainID] = _.assign(
+        {},
+        state[action.mainID],
+        action.data,
+      );
+
 
       return _.assign({}, state, modifiedStatePart);
     }
