@@ -62,14 +62,15 @@ class Login extends React.Component {
     }
   }
 
-  logOut(e) {
-    e.preventDefault();
-    this.setState({
-      username: '',
-      password: '',
-    });
-    this.props.reduxAction_doReset(fetchDataTransactionStateMainID, 'default');
-  }
+  // logOut(e) {
+  //   e.preventDefault();
+  //   this.setState({
+  //     username: '',
+  //     password: '',
+  //   });
+  //   this.props.reduxAction_doReset(fetchDataTransactionStateMainID, 'default');
+  //             <button onClick={(e) => { this.logOut(e); }}>Log out</button>
+  // }
 
   render() {
     const { username, password } = this.state;
@@ -98,10 +99,7 @@ class Login extends React.Component {
     if (generalStatus === 'success') {
       return (
         <div>
-          <h2> Logged In! </h2>
-          <Navbar />
           <Input />
-          <button onClick={(e) => { this.logOut(e); }}>Log out</button>
         </div>
       );
     }
