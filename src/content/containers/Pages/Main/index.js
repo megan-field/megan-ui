@@ -1,12 +1,12 @@
 import React from 'react';
-import RealIndex from './realIndex';
+import Login from './Login';
 
-class Login extends React.PureComponent {
+class App extends React.PureComponent {
   render() {
     return (
-      <RealIndex />
+      <Login />
     );
   }
 }
 
-export default Login;
+export default App;

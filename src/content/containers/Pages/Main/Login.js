@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import LoadingArea from '../../../../content/components/Loading';
+import Navbar from './Navbar';
+import Input from './Input';
 
 import fetchDataBuilder from '../../../../foundation/redux/Factories/FetchData';
 import { dNc } from '../../../../content/scripts/custom/utilities';
@@ -97,6 +99,8 @@ class Login extends React.Component {
       return (
         <div>
           <h2> Logged In! </h2>
+          <Navbar />
+          <Input />
           <button onClick={(e) => { this.logOut(e); }}>Log out</button>
         </div>
       );
