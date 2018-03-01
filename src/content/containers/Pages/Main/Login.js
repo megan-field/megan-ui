@@ -62,16 +62,6 @@ class Login extends React.Component {
     }
   }
 
-  // logOut(e) {
-  //   e.preventDefault();
-  //   this.setState({
-  //     username: '',
-  //     password: '',
-  //   });
-  //   this.props.reduxAction_doReset(fetchDataTransactionStateMainID, 'default');
-  //             <button onClick={(e) => { this.logOut(e); }}>Log out</button>
-  // }
-
   render() {
     const { username, password } = this.state;
     const sendData = { username, password };
@@ -97,23 +87,21 @@ class Login extends React.Component {
     }
 
     if (generalStatus === 'success') {
-      return (
-        <div>
-          <Input />
-        </div>
-      );
+      this.context.router.history.push('/input');
     }
 
     return (
-      <div>
+      <div style={{ textAlign: 'center' }}>
+        <br />
         {this.getErrorMessages()}
+        <br />
         <label>Username</label>
         <input type="text" ref={(element) => { this.username = element; }} />
         <br />
         <label>Password</label>
         <input type="text" ref={(element) => { this.password = element; }} />
         <br />
-        <button onClick={(e) => { this.handleForm(e); }}>Log in</button>
+        <button className="btn btn-primary" onClick={(e) => { this.handleForm(e); }}>Log in</button>
         <FetchData
           active={active}
           fetchURL="api/meganLogin"
@@ -133,6 +121,10 @@ Login.propTypes = {
 Login.defaultProps = {
   reduxState_fetchDataTransaction: {},
   reduxAction_doReset: () => {},
+};
+
+Login.contextTypes = {
+  router: PropTypes.object,
 };
 
 const mapStateToProps = state => ({

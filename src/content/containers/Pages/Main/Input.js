@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
+import './input.css';
 
 import Navbar from './Navbar';
 import { dNc } from '../../../../content/scripts/custom/utilities';
@@ -20,11 +21,21 @@ class Input extends React.Component {
     const index = values.length - 1;
 
     return (
-      <div>
+      <div className="container">
         <h3>Your most recent order</h3>
-        <h4>{values[index].firstName}</h4>
-        <h4>{values[index].surName}</h4>
-        <p>{values[index].orderDetails}</p>
+        <div className="row justify-content-center">
+          <div className="col-1" id="first">
+            <h4>{values[index].firstName}</h4>
+          </div>
+          <div className="col-1" id="second">
+            <h4> {values[index].surName}</h4>
+          </div>
+        </div>
+        <div className="row">
+          <div clasName="col-7">
+            <p>{values[index].orderDetails}</p>
+          </div>
+        </div>
         <br />
         <hr />
       </div>
@@ -51,22 +62,34 @@ class Input extends React.Component {
 
   render() {
     console.log('Input rendered');
-    console.log(this.props.reduxState_this);
-    let orders = 'You have no orders yet...';
 
-    if (dNc(this.props.reduxState_this.firstName)) orders = this.getList();
+    let orders = 'You don\'t have any orders yet';
+    if (dNc(this.props.reduxState_this[1])) orders = this.getList();
 
     return (
       <div style={{ textAlign: 'center' }}>
         <Navbar />
-        <label>First Name</label><br />
-        <input type="text" ref={(element) => { this.firstName = element; }} /><br />
-        <label>Surname</label><br />
-        <input type="text" ref={(element) => { this.surName = element; }} /><br />
-        <label>Order Details</label><br />
-        <input type="text" ref={(element) => { this.orderDetails = element; }} /><br />
-        <button onClick={(e) => { this.handleInput(e); }}>Submit</button>
-        <h3>{orders}</h3>
+        <br />
+        <br />
+        <form className="container" id="formContainer">
+          <label>Your name</label>
+          <div className="row">
+            <div className="col">
+              <input type="text" className="form-control" placeholder="First name" ref={(element) => { this.firstName = element; }} />
+            </div>
+            <div className="col">
+              <input type="text" className="form-control" placeholder="Last name" ref={(element) => { this.surName = element; }} />
+            </div>
+          </div>
+          <br />
+          <div className="form-group">
+            <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your order details" ref={(element) => { this.orderDetails = element; }} />
+          </div>
+          <button type="button" className="btn btn-outline-secondary" onClick={(e) => { this.handleInput(e); }}>Submit</button>
+        </form>
+        <br />
+        <br />
+        <h4>{orders}</h4>
       </div>
     );
   }
