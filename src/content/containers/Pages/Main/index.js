@@ -1,12 +1,25 @@
 import React from 'react';
-import Login from './Login';
+import Navbar from './Navbar';
+import Home from './home';
+import About from './about';
+import Contact from './contact';
+import './main.css';
 
-class App extends React.PureComponent {
+class index extends React.PureComponent {
   render() {
     return (
-      <Login />
+      <div>
+        <Navbar />
+        <div className="container" id="pageContainer" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+          <Home />
+          <h4 id="about">About</h4>
+          <About />
+          <h4 id="contact">Get in touch</h4>
+          <Contact />
+        </div>
+      </div>
     );
   }
 }
 
-export default App;
+export default index;
