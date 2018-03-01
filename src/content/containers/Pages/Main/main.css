@@ -5,9 +5,13 @@
   text-align: center;
 }
 
+#home {
+  height: 100vh;
+  padding-top: 10%; 
+}
 
 #info {
-  height: 900px;
+  height: 100vh;
   padding-top: 10%; 
 }
 

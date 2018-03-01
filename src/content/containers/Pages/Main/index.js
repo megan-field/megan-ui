@@ -14,7 +14,7 @@ class index extends React.PureComponent {
           <Home />
           <h4 id="about">About</h4>
           <About />
-          <h4 id="contact">Get in touch</h4>
+          <h4 id="contact">Contact</h4>
           <Contact />
         </div>
       </div>
