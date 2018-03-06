@@ -347,6 +347,6 @@
     "webpack-hot-middleware": "^2.21.0"
   },
   "resolutions": {
-   "webpack-sources": "1.0.1"
+    "webpack-sources": "1.0.1"
   }
 }

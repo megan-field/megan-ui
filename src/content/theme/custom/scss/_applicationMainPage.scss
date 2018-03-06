@@ -1,0 +1,345 @@
+.wrapper {
+  height: 100vh;
+  background-color: #545454;
+  background-image: url('../images/background2.jpeg');
+  background-size: cover;
+  filter: grayscale(100%);
+  background-blend-mode: multiply;
+
+  .textBox {
+    padding-top: 30vh;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+    .far {
+      font-size: 1.5em;
+    }
+
+    h3 {
+      font-weight: 600;
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+  }
+}
+
+.landingPage2 {
+  background-image: url('../images/background.jpeg');
+  height: 80vh;
+  background-size: cover;
+  filter: grayscale(50%);
+  padding-top: 25vh;
+
+  .container {
+    height: 50vh;
+    padding-top: 10vh;
+    text-align: center;
+
+    h3 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+  }
+
+  #text {
+    color: #fff;
+  }
+}
+
+#navbar2 {
+  height: 7vh;
+
+  .navbar-brand {
+    padding-left: 2vw;
+  }
+
+  .nav-link {
+    color: $dark-color;
+    margin-right: 2vw;
+  }
+
+  .nav-link:hover {
+    color: #0050bd;
+  }
+}
+
+nav {
+  position: relative;
+
+  a {
+    color: #fff;
+  }
+}
+
+.whatWeDo {
+  height: $primary-page-height;
+
+  #topRow {
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+  }
+
+  .card-header {
+    background-color: #f7786b;
+    text-align: center;
+    min-height: 10vh;
+  }
+
+  .card-header2 {
+    background-color: #91a8d0;
+    padding-top: 2vh;
+    text-align: center;
+    min-height: 10vh;
+  }
+
+  .card-header3 {
+    min-height: 10vh;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: #034f84;
+  }
+
+  .card-header4 {
+    min-height: 10vh;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: #f7cac9;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 30vh;
+  }
+
+  #title {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 800;
+    padding-top: 7vh;
+  }
+}
+
+.whatWeDo2 {
+  height: 700px;
+
+  #topRow {
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+  }
+
+  .card-header {
+    background-color: #f7786b;
+    text-align: center;
+    min-height: 10vh;
+  }
+
+  .card-header2 {
+    background-color: #91a8d0;
+    padding-top: 2vh;
+    text-align: center;
+    min-height: 10vh;
+  }
+
+  .card-header3 {
+    min-height: 10vh;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: #034f84;
+  }
+
+  .card-header4 {
+    min-height: 10vh;
+    padding-top: 2vh;
+    text-align: center;
+    background-color: #f7cac9;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 40vh;
+  }
+
+  #title {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    padding-top: 5vh;
+    padding-left: 10vw;
+    color: #a3a3a3;
+  }
+}
+
+#doItNow {
+  height: $secondary-page-height;
+  padding-top: 2vh;
+
+  #title {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 800;
+    color: $primary-blue;
+    padding-bottom: 1vh;
+  }
+
+  .card-body {
+    background-color: #fff;
+  }
+
+  .card-header {
+    background-color: $primary-blue;
+    color: #fff;
+  }
+
+  #card-header2 {
+    background-color: $secondary-blue;
+    color: #fff;
+  }
+}
+
+#howItWorks2 {
+  height: $secondary-page-height;
+
+  #title {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    padding-left: 10vw;
+    color: #a3a3a3;
+  }
+
+  #icon {
+    font-size: 36px;
+    padding: 20px;
+    color: $secondary-blue;
+  }
+
+  #innerWrapper {
+    text-align: center;
+
+    #howItWorksRow {
+      padding-top: 4vh;
+    }
+
+    #description {
+      border-style: solid;
+      border-width: medium;
+    }
+  }
+}
+
+#howItWorks {
+  height: $secondary-page-height;
+  background-color: $secondary-grey;
+  padding-top: 10vh;
+
+  #title {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 800;
+  }
+
+  #icon {
+    font-size: 36px;
+    padding: 20px;
+    color: $secondary-blue;
+  }
+
+  #innerWrapper {
+    text-align: center;
+
+    #howItWorksRow {
+      padding-top: 4vh;
+    }
+  }
+}
+
+#inputForm {
+  background-color: $secondary-grey;
+
+  #inputEmail {
+    width: 50vw;
+    height: $secondary-page-height;
+    padding-top: 10vh;
+  }
+
+  a {
+    color: $dark-color;
+  }
+}
+
+#inputForm2 {
+  width: 25vw;
+  padding-top: 2vh;
+}
+
+#bouncePoint {
+  background-color: #f7cac9;
+  border-radius: 25px;
+  height: 60vh;
+  width: 50vw;
+  margin-bottom: 10vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  .carousel-inner {
+    height: 60vh;
+    color: #fff;
+    padding-top: 13vh;
+  }
+}
+
+.questions {
+  height: $secondary-page-height;
+  padding-top: 10vh;
+  background-color: #034f84;
+  text-align: center;
+
+  h4 {
+    font-weight: 600;
+  }
+
+  #border {
+    border-radius: 25px;
+    height: 30vh;
+    padding-top: 5vh;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.questions2 {
+  height: $secondary-page-height;
+  padding-top: 10vh;
+  background-color: #034f84;
+  text-align: center;
+  color: #fff;
+}
+
+#aboutPage {
+  padding-top: 10vh;
+}
+
+#benefitPage {
+  padding-top: 10vh;
+}
+
+#dqPage {
+  padding-top: 10vh;
+}
+
+#legalPage {
+  padding-top: 10vh;
+}
+
+.footer {
+  padding-top: 7%;
+  height: 400px;
+  background-color: $dark-color;
+
+  h5 {
+    color: #fff;
+  }
+}
