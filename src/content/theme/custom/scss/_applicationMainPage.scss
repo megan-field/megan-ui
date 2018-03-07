@@ -257,6 +257,20 @@ nav {
   }
 }
 
+.footer {
+  padding-top: 7%;
+  height: 400px;
+  background-color: $dark-color;
+
+  h5 {
+    color: #fff;
+  }
+
+  a {
+    color: #303030;
+  }
+}
+
 #inputForm {
   background-color: $secondary-grey;
 
@@ -277,7 +291,7 @@ nav {
 }
 
 #bouncePoint {
-  background-color: #f7cac9;
+  background-color: #91a8d0;
   border-radius: 25px;
   height: 60vh;
   width: 50vw;
@@ -312,8 +326,8 @@ nav {
 
 .questions2 {
   height: $secondary-page-height;
+  background-color: $primary-grey;
   padding-top: 10vh;
-  background-color: #034f84;
   text-align: center;
   color: #fff;
 }
@@ -324,6 +338,7 @@ nav {
 
 #benefitPage {
   padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 #dqPage {
@@ -331,15 +346,10 @@ nav {
 }
 
 #legalPage {
-  padding-top: 10vh;
-}
+  padding-top: 15vh;
 
-.footer {
-  padding-top: 7%;
-  height: 400px;
-  background-color: $dark-color;
-
-  h5 {
-    color: #fff;
+  #wrapper {
+    margin-top: 8vh;
+    margin-bottom: 12vh;
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './navbar2';
+import Footer from './footer';
 
 class About extends React.Component {
   componentDidMount() {
@@ -13,6 +14,7 @@ class About extends React.Component {
         <div className="container" id="aboutPage">
           <h4>About Us</h4>
         </div>
+        <Footer />
       </div>
     );
   }

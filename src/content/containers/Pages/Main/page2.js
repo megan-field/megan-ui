@@ -17,7 +17,7 @@ class page1 extends React.Component {
         <HowItWorks />
         <BouncePoint />
         <Questions />
-        <h5 id="contact">contact</h5>
+        <h5 hidden id="contact">contact</h5>
         <Footer />
       </div>
     );

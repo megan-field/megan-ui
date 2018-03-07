@@ -11,7 +11,10 @@ class Footer extends React.Component {
             </div>
             <div id="navigation" className="col">
               <h5>Alumni Base</h5>
-              <a href="about">about</a>
+              <a href="/about">About Us</a><br />
+              <a href="/benefits">Benefits</a><br />
+              <a href="/data">Data Quality</a><br />
+              <a href="/legal">Compliance & Legal</a>
             </div>
             <div id="legals" className="col">
               <h5>Legal</h5>

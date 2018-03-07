@@ -15,6 +15,7 @@ class BouncePoint extends React.Component {
               <div className="carousel-item active text-center">
                 <img alt="logo" src={require('../../content/theme/custom/images/TEF2.png')} style={{ width: '8vw' }} /><br />
                 <h5>Teaching Excellence Framework</h5>
+                <h5 className="card-title">Card title</h5>
                 <p>...</p>
               </div>
               <div className="carousel-item text-center">
