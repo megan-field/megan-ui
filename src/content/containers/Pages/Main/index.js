@@ -1,11 +1,11 @@
 import React from 'react';
-import Doughnut from './pieChart';
+import Line from './lineChart';
 
 class Index extends React.Component {
   render() {
     return (
       <div>
-        <Doughnut />
+        <Line />
       </div>
     );
   }
