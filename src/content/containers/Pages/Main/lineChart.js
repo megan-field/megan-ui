@@ -8,10 +8,11 @@ import { fireDebouncedResizeEvents, whenLoaded } from '../../../../content/scrip
 class Line extends React.Component {
   componentDidMount() {
     const data = { age: [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40], plotted: [3, 5, 4, 8, 10, 7, 1, 3, 5, 6, 2, 4, 6, 9, 5, 2, 4, 8, 5, 1] };
+    const label = ['xAxis', 'yAxis'];
 
     whenLoaded(() => {
       // draw out the graphs
-      renderChartToTarget('graph1', drawLineChart(data));
+      renderChartToTarget('graph1', drawLineChart(data, label));
 
       // listen for resize events
       fireDebouncedResizeEvents();

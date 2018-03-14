@@ -14,7 +14,42 @@ function getColourScheme() {
   ];
 }
 
-export function drawLineChart(data) {
+export function drawSankeyChart(data) {
+  const options = {
+    tooltip: {
+      trigger: 'item',
+      triggerOn: 'mousemove',
+    },
+    series: [
+      {
+        type: 'sankey',
+        layout: 'none',
+        data: data.nodes,
+        links: data.links,
+        color: [
+          '#30588C',
+          '#77C3F2',
+          // '#FAA805',
+        ],
+        itemStyle: {
+          normal: {
+            borderWidth: 1,
+            borderColor: '#aaa',
+          },
+        },
+        lineStyle: {
+          normal: {
+            color: 'source',
+            curveness: 0.7,
+          },
+        },
+      },
+    ],
+  };
+  return options;
+}
+
+export function drawLineChart(data, label) {
   const colours = [{ gt: 0, lte: 2, color: '#88b7dc' }, { gt: 2, lte: 4, color: '#62a0d0' }, { gt: 4, lte: 6, color: '#3a88c4' }, { gt: 6, lte: 8, color: '#2f6d9d' }, { gt: 8, lte: 10, color: '#235175' }];
   const options = {
     visualMap: [{
@@ -38,6 +73,9 @@ export function drawLineChart(data) {
       bottom: 95,
     },
     xAxis: [{
+      name: label[0],
+      nameLocation: 'center',
+      nameGap: 50,
       type: 'category',
       axisLine: {
         lineStyle: {
@@ -48,6 +86,10 @@ export function drawLineChart(data) {
       data: data.age,
     }],
     yAxis: [{
+      name: label[1],
+      nameLocation: 'center',
+      nameGap: 50,
+      nameRotate: 0,
       type: 'value',
       splitLine: {
         show: false,
@@ -67,7 +109,6 @@ export function drawLineChart(data) {
       splitArea: {
         show: false,
       },
-
     }],
     series: [{
       type: 'line',
