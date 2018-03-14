@@ -1,6 +1,6 @@
 
-import MainPage from '../../content/containers/Pages/Main/page1';
-import page2 from '../../content/containers/Pages/Main/page2';
+import MainPage from '../../content/containers/Pages/Main/index';
+import page2 from '../../content/containers/Pages/Website/page2';
 import AboutPage from '../components/about';
 import LegalPage from '../components/legal';
 import DataPage from '../components/dqPage';

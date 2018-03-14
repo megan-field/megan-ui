@@ -51,6 +51,9 @@ class WhatWeDo extends React.Component {
             </div>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
         <hr style={{ width: '40vw' }} />
       </div>
     );

@@ -37,13 +37,8 @@ class HowItWorks extends React.Component {
               <p>in our tool or</p>
               <p>via expert to tableu etc.</p>
             </div>
-
           </div>
-
         </div>
-        <br />
-        <br />
-        <hr style={{ width: '40vw' }} />
       </div>
     );
   }

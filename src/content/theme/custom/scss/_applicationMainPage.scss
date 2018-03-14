@@ -176,6 +176,16 @@ nav {
   }
 }
 
+#virtuousCircle {
+  background-color: #91a8d0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+  padding: 5vh;
+  height: 600px;
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
 #doItNow {
   height: $secondary-page-height;
   padding-top: 2vh;
@@ -229,6 +239,24 @@ nav {
       border-style: solid;
       border-width: medium;
     }
+  }
+}
+
+.survey {
+  height: $secondary-page-height;
+  padding-top: 20px;
+  background-color: #91a8d0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  #image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 420px;
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  #textBox {
+    padding-top: 50px;
   }
 }
 
@@ -291,10 +319,11 @@ nav {
 }
 
 #bouncePoint {
-  background-color: #91a8d0;
+  background-color: #f7cac9;
   border-radius: 25px;
   height: 60vh;
   width: 50vw;
+  margin-top: 10vh;
   margin-bottom: 10vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -334,11 +363,58 @@ nav {
 
 #aboutPage {
   padding-top: 10vh;
+  background-color: $secondary-grey;
+
+  #title {
+    font-weight: 600;
+    padding-bottom: 40px;
+  }
 }
 
 #benefitPage {
-  padding-top: 10vh;
+  padding-top: 13vh;
   padding-bottom: 10vh;
+  margin: auto;
+
+  #title {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    padding-left: 10vw;
+    padding-bottom: 40px;
+    color: #a3a3a3;
+  }
+
+  #subHeading {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+  }
+
+  #TEF {
+    padding: 20px;
+    text-align: center;
+    background-color: $secondary-grey;
+
+    #image {
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      height: 35vh;
+      width: 30vw;
+    }
+
+    #card {
+      margin: 10px;
+      text-align: left;
+    }
+  }
+
+  #meaningfulMarketing {
+    #image {
+      height: 50vh;
+      width: 50vw;
+    }
+  }
 }
 
 #dqPage {
@@ -346,7 +422,7 @@ nav {
 }
 
 #legalPage {
-  padding-top: 15vh;
+  padding-top: 5vh;
 
   #wrapper {
     margin-top: 8vh;

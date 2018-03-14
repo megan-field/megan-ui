@@ -15,18 +15,21 @@ class BouncePoint extends React.Component {
               <div className="carousel-item active text-center">
                 <img alt="logo" src={require('../../content/theme/custom/images/TEF2.png')} style={{ width: '8vw' }} /><br />
                 <h5>Teaching Excellence Framework</h5>
-                <h5 className="card-title">Card title</h5>
-                <p>...</p>
+                <p>AlumniBase is compatible with the DLHE survey, </p>
+                <p>meaning TEF quality data for lifetime graduate outcomes.</p>
               </div>
               <div className="carousel-item text-center">
                 <img alt="logo" src={require('../../content/theme/custom/images/recruitment2.png')} style={{ width: '8vw' }} /><br />
                 <h5>Student Recruitment</h5>
-                <p>...</p>
+                <p>Being able to show how students just like the applicant</p>
+                <p> have gone on to succeed after graduation answers much deeper </p>
+                <p>questions while they chose their university</p>
               </div>
               <div className="carousel-item text-center">
                 <img alt="logo" src={require('../../content/theme/custom/images/employability.png')} style={{ width: '8vw' }} /><br />
                 <h5>Employability</h5>
-                <p>...</p>
+                <p>Past alumni success can help persuade the </p>
+                <p>audiences to attend your university.</p>
               </div>
               <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true" />
